@@ -12,6 +12,21 @@ class DataCapture:
 
 # BuildStats class that has less, greater, and between methods
 
+class BuildStats:
+    lyst = []
+    def __init__(self, lystArg):
+        self.lyst = lystArg
+
+    def less(self, number):
+        return len([i for i in self.lyst if i < number])
+
+    def greater(self, number):
+        return len([i for i in self.lyst if i > number])
+
+    def between(self, number1, number2):
+        return len([i for i in self.lyst if i > number1 and i < number2])
+
+
 ### indigo's code ##
 
 capture = DataCapture()
