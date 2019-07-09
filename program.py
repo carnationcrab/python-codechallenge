@@ -24,8 +24,7 @@ class BuildStats:
         return len([i for i in self.lyst if i > number])
 
     def between(self, number1, number2):
-        return len([i for i in self.lyst if i > number1 and i < number2])
-
+        return len([i for i in self.lyst if i in range(number1, number2 + 1)])
 
 ### indigo's code ##
 
@@ -37,11 +36,11 @@ capture.add(3)
 capture.add(4)
 capture.add(6)
 
-# stats = capture.build_stats()
+stats = capture.build_stats()
 
-# stats.less(4) # should return 2 (only two values 3,3 are less than 4)
+stats.less(4) # should return 2 (only two values 3,3 are less than 4)
 
  
-# stats.between(3, 6) # should return 4 (3,3,4 and 6 are between 3 and 6)
+stats.between(3, 6) # should return 4 (3,3,4 and 6 are between 3 and 6)
 
-# stats.greater(4)) # should return 2 (6 and 9 are the only two values greater than 4)
+stats.greater(4) # should return 2 (6 and 9 are the only two values greater than 4)
