@@ -4,6 +4,14 @@ A code challenge from a client for python.
 
 ## Information
 
+Refer to the commit history for further notes-- [This commit](https://github.com/carnationcrab/python-codechallenge/commit/fd4939d1d0d2dca0732fe427f43dd9530964bec6) leaves Indigo's code as intended, the most recent commits include print messages to make seeing the results easier.
+
+#### Further Steps:
+
+(Things I could do if I have more time later)
+
+* add unit testing
+
 ### Prerequisites
 
 ```
